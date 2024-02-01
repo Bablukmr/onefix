@@ -174,4 +174,6 @@
 
 
 
-  
+   <a href="tel:9155589000" class="instagram"><i class="bu bi-telephone"></i> 9155589000</a>
+
+   
