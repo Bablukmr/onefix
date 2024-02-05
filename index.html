@@ -475,137 +475,142 @@
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
           <h2 style="text-align: center; margin: 20px 0px;">Book Your Service</h2>
           <div class="col-lg-10">
-              <form id="dealershipForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                      <div class="col-md-6 form-group">
-                          <label for="names">Your Name</label>
-                          <input type="text" name="name" class="form-control" id="names" required>
-                      </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                          <label for="emails">Your Email</label>
-                          <input type="email" class="form-control" name="email" id="emails" required>
-                      </div>
+            <form id="dealershipForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="names">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="names" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <label for="emails">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="emails" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="phone">Mobile</label>
+                  <input type="tel" class="form-control" name="phone" id="phone" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <label for="altphone">Alternative Mobile</label>
+                  <input type="tel" class="form-control" name="altphone" id="altphone">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="district">Select District</label>
+                <select class="form-control" name="district" id="district" required>
+                  <option value="VAISHALI">VAISHALI</option>
+                  <option value="GAYA">GAYA</option>
+                  <option value="SARAN">SARAN</option>
+                  <option value="AURANGABAD">AURANGABAD</option>
+                  <option value="Arwal">Arwal</option>
+                  <option value="Rohtas">Rohtas</option>
+                  <option value="Jamui">Jamui</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <label for="products">Select Products</label>
+                <div class="form-check" style="display: flex; flex-wrap: wrap; gap: 26px;">
+                  <div>
+                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                      value="motor" id="motor">
+                    <label class="form-check-label" for="motor">Motor</label>
                   </div>
-                  <div class="row">
-                      <div class="col-md-6 form-group">
-                          <label for="phone">Mobile</label>
-                          <input type="tel" class="form-control" name="phone" id="phone" required>
-                      </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                          <label for="altphone">Alternative Mobile</label>
-                          <input type="tel" class="form-control" name="altphone" id="altphone">
-                      </div>
+
+                  <div>
+                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                      value="submersible" id="submersible">
+                    <label class="form-check-label" for="submersible">Submersible</label>
                   </div>
-                  <div class="form-group mt-3">
-                      <label for="district">Select District</label>
-                      <select class="form-control" name="district" id="district" required>
-                          <option value="VAISHALI">VAISHALI</option>
-                          <option value="GAYA">GAYA</option>
-                          <option value="SARAN">SARAN</option>
-                          <option value="AURANGABAD">AURANGABAD</option>
-                          <option value="Arwal">Arwal</option>
-                          <option value="Rohtas">Rohtas</option>
-                          <option value="Jamui">Jamui</option>
-                      </select>
+
+                  <div>
+                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                      value="pumps" id="pumps">
+                    <label class="form-check-label" for="pumps">Pumps</label>
                   </div>
-                  <div class="form-group mt-3">
-                      <label for="products">Select Products</label>
-                      <div class="form-check" style="display: flex; flex-wrap: wrap; gap: 26px;">
-<div>
-  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]" value="motor" id="motor">
-                          <label class="form-check-label" for="motor">Motor</label>
-</div>
-                        
-      <div>
-        <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]" value="submersible" id="submersible">
-        <label class="form-check-label" for="submersible">Submersible</label>
-      </div>
-                         
-      <div>
-        <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]" value="pumps" id="pumps">
-        <label class="form-check-label" for="pumps">Pumps</label>
-      </div>
-                         
-      <div>
-        <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]" value="fan" id="fan">
-        <label class="form-check-label" for="fan">Fan</label>
-      </div>
-                         
-      <div>
-        
-      </div>
-                          <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]" value="other" id="other">
-                          <label class="form-check-label" for="other">Other</label>
-                      </div>
+
+                  <div>
+                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                      value="fan" id="fan">
+                    <label class="form-check-label" for="fan">Fan</label>
                   </div>
-                  <div class="form-group mt-3">
-                      <label for="state">State</label>
-                      <input type="text" class="form-control" name="state" id="state" required>
+
+                  <div>
+
                   </div>
-                  <div class="form-group mt-3">
-                      <label for="messages">Message</label>
-                      <textarea class="form-control" name="message" rows="5" id="messages" required></textarea>
-                  </div>
-                  <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center">
-                      <button type="submit" onclick="sendDealershipInquiry(event)">Send Message</button>
-                  </div>
-                  <div class="loading" style="display: none;">Loading...</div>
-                  <div class="error-message" style="color: red;"></div>
-                  <div class="sent-message" style="color: green;"></div>
-              </form>
-      
-              <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-              <script src="https://smtpjs.com/v3/smtp.js"></script>
-              <script>
-                  function sendDealershipInquiry(e) {
-                      e.preventDefault();
-                      var name = document.getElementById("names").value;
-                      var email = document.getElementById("emails").value;
-                      var phone = document.getElementById("phone").value;
-                      var altphone = document.getElementById("altphone").value;
-                      var district = document.getElementById("district").value;
-                      var products = document.getElementsByName("products[]");
-                      var selectedProducts = Array.from(products).filter(product => product.checked).map(product => product.value).join(", ");
-                      var state = document.getElementById("state").value;
-                      var message = document.getElementById("messages").value;
-      
-                      if (!name || !email || !phone || !district || !selectedProducts || !state || !message) {
-                          swal("Failed!", "All Fields Are Required", "error");
-                          return;
-                      } else {
-                          var body = `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Alternative Phone: ${altphone} <br/> District: ${district} <br/> Products: ${selectedProducts} <br/> State: ${state} <br/> Message: ${message}`;
-      
-                          Email.send({
-                              Host: "smtp.elasticemail.com",
-                              Username: "bablukmr2231@gmail.com",
-                              Password: "49B7BD3457A0A5CC2FA472534182C75BC32C",
-                              To: "bablukmr2231@gmail.com",
-                              From: "bablukmr2231@gmail.com",
-                              Subject: "Customer Inquiry",
-                              Body: body,
-                          }).then((message) => {
-                              if (message === "OK") {
-                                  swal("Successful!", "Your dealership inquiry has been sent successfully.", "success");
-                                  document.getElementById("dealershipForm").reset();
-                              } else {
-                                  swal(
-                                      "Failed!",
-                                      "Your dealership inquiry was not received. Please try again later.",
-                                      "error"
-                                  );
-                              }
-                          });
-                      }
-                  }
-              </script>
+                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                    value="other" id="other">
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" id="state" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="messages">Message</label>
+                <textarea class="form-control" name="message" rows="5" id="messages" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <button type="submit" onclick="sendDealershipInquiry(event)">Book Now</button>
+              </div>
+              <div class="loading" style="display: none;">Loading...</div>
+              <div class="error-message" style="color: red;"></div>
+              <div class="sent-message" style="color: green;"></div>
+            </form>
+
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+              function sendDealershipInquiry(e) {
+                e.preventDefault();
+                var name = document.getElementById("names").value;
+                var email = document.getElementById("emails").value;
+                var phone = document.getElementById("phone").value;
+                var altphone = document.getElementById("altphone").value;
+                var district = document.getElementById("district").value;
+                var products = document.getElementsByName("products[]");
+                var selectedProducts = Array.from(products).filter(product => product.checked).map(product => product.value).join(", ");
+                var state = document.getElementById("state").value;
+                var message = document.getElementById("messages").value;
+
+                if (!name || !email || !phone || !district || !selectedProducts || !state || !message) {
+                  swal("Failed!", "All Fields Are Required", "error");
+                  return;
+                } else {
+                  var body = `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Alternative Phone: ${altphone} <br/> District: ${district} <br/> Products: ${selectedProducts} <br/> State: ${state} <br/> Message: ${message}`;
+
+                  Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "bablukmr2231@gmail.com",
+                    Password: "49B7BD3457A0A5CC2FA472534182C75BC32C",
+                    To: "bablukmr2231@gmail.com",
+                    From: "bablukmr2231@gmail.com",
+                    Subject: "Customer Inquiry",
+                    Body: body,
+                  }).then((message) => {
+                    if (message === "OK") {
+                      swal("Successful!", "Your dealership inquiry has been sent successfully.", "success");
+                      document.getElementById("dealershipForm").reset();
+                    } else {
+                      swal(
+                        "Failed!",
+                        "Your dealership inquiry was not received. Please try again later.",
+                        "error"
+                      );
+                    }
+                  });
+                }
+              }
+            </script>
           </div>
-      </div>
-      
+        </div>
+
 
 
       </div>
@@ -625,12 +630,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Company</h3>
+            <img height="30" src="assets/img/1-fix.jpeg" alt="1fix Logo" style="border-radius: 5px;" />
+            <h3 style="margin-top: 10px;">1Fix</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              Nava Nagar, NCM Farm House, Mahua Road, Hajipur Vaishali - 844102 (Bihar)<br><br>
+              <strong>Phone:</strong> 9155589000<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
@@ -641,28 +645,29 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">REFRIGERATION REPAIR</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">AIR CONDITIONER REPAIR</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">WATER PURIFIER REPAIR</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">GEYSER REPAIR</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
+            <h4>Join Our Services</h4>
+            <p>Looking for reliable and efficient services? Join us at 1Fix for a seamless experience. We
+              take pride in providing top-notch services with a customer-centric approach.</p>
+            <!-- <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            </form> -->
           </div>
 
         </div>
@@ -673,14 +678,11 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
+          &copy; 2024 Copyright: <strong><span>1Fix </span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+          Designed by <a href="https://www.intenext.in/">Intenext Solutions Pvt. Ltd.</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

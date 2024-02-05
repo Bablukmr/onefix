@@ -2076,12 +2076,12 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #111;
+  background: #000000;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1e1e1e;
+  background: #E31E25;
 }
 
 #footer .footer-top .footer-contact {
