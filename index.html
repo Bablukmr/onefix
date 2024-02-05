@@ -6,8 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>1Fix - We Fix it Right</title>
-  <meta name="description" content="Discover reliable appliance repair and technical education services with 1Fix. Our skilled technicians offer affordable and prompt solutions for home appliances, including refrigerators, air conditioners, washing machines, and more. Explore our training institute, Smart Techno Care, providing courses in AC, TV, mobile, motor winding, and refrigerator repair. Empower yourself with technical skills in a technology-driven world. Contact us 24x7 for quality service and education. Your satisfaction is our priority at 1Fix">
-  <meta name="keywords" content="appliance repair, technical education, 1Fix services, refrigerator repair, air conditioner maintenance, washing machine service, Smart Techno Care courses, technology-driven education, 24x7 service, Bihar">
+  <meta name="description"
+    content="Discover reliable appliance repair and technical education services with 1Fix. Our skilled technicians offer affordable and prompt solutions for home appliances, including refrigerators, air conditioners, washing machines, and more. Explore our training institute, Smart Techno Care, providing courses in AC, TV, mobile, motor winding, and refrigerator repair. Empower yourself with technical skills in a technology-driven world. Contact us 24x7 for quality service and education. Your satisfaction is our priority at 1Fix">
+  <meta name="keywords"
+    content="appliance repair, technical education, 1Fix services, refrigerator repair, air conditioner maintenance, washing machine service, Smart Techno Care courses, technology-driven education, 24x7 service, Bihar">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -78,6 +80,8 @@
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li><a href="#Conditions">Terms & Conditions
+          </a></li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -152,6 +156,155 @@
 
   <main id="main">
 
+    <!-- <main id="main"> -->
+
+
+      <section id="contact" class="contact">
+  
+        <div class="container" style="margin-top: -100px;">
+       <!-- form -->
+       <div class="row mt-5 justify-content-center" data-aos="fade-up">
+        <h2 style="text-align: center; margin: 20px 0px;">Book Your Service</h2>
+        <div class="col-lg-10">
+          <form id="dealershipForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="names">Your Name</label>
+                <input type="text" name="name" class="form-control" id="names" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label for="emails">Your Email</label>
+                <input type="email" class="form-control" name="email" id="emails" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="phone">Mobile</label>
+                <input type="tel" class="form-control" name="phone" id="phone" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label for="altphone">Alternative Mobile</label>
+                <input type="tel" class="form-control" name="altphone" id="altphone">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="district">Select District</label>
+              <select class="form-control" name="district" id="district" required>
+                <option value="VAISHALI">VAISHALI</option>
+                <option value="GAYA">GAYA</option>
+                <option value="SARAN">SARAN</option>
+                <option value="AURANGABAD">AURANGABAD</option>
+                <option value="Arwal">Arwal</option>
+                <option value="Rohtas">Rohtas</option>
+                <option value="Jamui">Jamui</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="products">Select Products</label>
+              <div class="form-check" style="display: flex; flex-wrap: wrap; gap: 26px;">
+                <div>
+                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                    value="motor" id="motor">
+                  <label class="form-check-label" for="motor">Motor</label>
+                </div>
+
+                <div>
+                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                    value="submersible" id="submersible">
+                  <label class="form-check-label" for="submersible">Submersible</label>
+                </div>
+
+                <div>
+                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                    value="pumps" id="pumps">
+                  <label class="form-check-label" for="pumps">Pumps</label>
+                </div>
+
+                <div>
+                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                    value="fan" id="fan">
+                  <label class="form-check-label" for="fan">Fan</label>
+                </div>
+
+                <div>
+
+                </div>
+                <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
+                  value="other" id="other">
+                <label class="form-check-label" for="other">Other</label>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="state">State</label>
+              <input type="text" class="form-control" name="state" id="state" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="messages">Message</label>
+              <textarea class="form-control" name="message" rows="5" id="messages" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" onclick="sendDealershipInquiry(event)">Book Now</button>
+            </div>
+            <div class="loading" style="display: none;">Loading...</div>
+            <div class="error-message" style="color: red;"></div>
+            <div class="sent-message" style="color: green;"></div>
+          </form>
+
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script>
+            function sendDealershipInquiry(e) {
+              e.preventDefault();
+              var name = document.getElementById("names").value;
+              var email = document.getElementById("emails").value;
+              var phone = document.getElementById("phone").value;
+              var altphone = document.getElementById("altphone").value;
+              var district = document.getElementById("district").value;
+              var products = document.getElementsByName("products[]");
+              var selectedProducts = Array.from(products).filter(product => product.checked).map(product => product.value).join(", ");
+              var state = document.getElementById("state").value;
+              var message = document.getElementById("messages").value;
+
+              if (!name || !email || !phone || !district || !selectedProducts || !state || !message) {
+                swal("Failed!", "All Fields Are Required", "error");
+                return;
+              } else {
+                var body = `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Alternative Phone: ${altphone} <br/> District: ${district} <br/> Products: ${selectedProducts} <br/> State: ${state} <br/> Message: ${message}`;
+
+                Email.send({
+                  Host: "smtp.elasticemail.com",
+                  Username: "bablukmr2231@gmail.com",
+                  Password: "49B7BD3457A0A5CC2FA472534182C75BC32C",
+                  To: "bablukmr2231@gmail.com",
+                  From: "bablukmr2231@gmail.com",
+                  Subject: "Customer Inquiry",
+                  Body: body,
+                }).then((message) => {
+                  if (message === "OK") {
+                    swal("Successful!", "Your dealership inquiry has been sent successfully.", "success");
+                    document.getElementById("dealershipForm").reset();
+                  } else {
+                    swal(
+                      "Failed!",
+                      "Your dealership inquiry was not received. Please try again later.",
+                      "error"
+                    );
+                  }
+                });
+              }
+            }
+          </script>
+        </div>
+       </div>
+      </section>
+      <!-- form -->
+</div>
+
     <!-- ======= About Us Section ======= -->
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
@@ -215,7 +368,8 @@
               <div class="member-info">
                 <h4>REFRIGERATION REPAIR</h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -228,7 +382,8 @@
               <div class="member-info">
                 <h4>LED REPAIRING</h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -241,7 +396,8 @@
               <div class="member-info">
                 <h4>WATER PURIFIER REPAIR</h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -254,7 +410,8 @@
               <div class="member-info">
                 <h4>LCD REPAIRING </h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -270,7 +427,8 @@
               <div class="member-info">
                 <h4>AIR CONDITIONER REPAIR</h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -284,7 +442,8 @@
                 <h4>WASHING MACHINE REPAIR
                 </h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -298,7 +457,8 @@
                 <h4>MICROWAVE REPAIR
                 </h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -312,7 +472,8 @@
                 <h4>GEYSER REPAIR
                 </h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book Now</a></button>
+                <button type="button" class="btn"><a class="btn btn-success" href="/contact.html#contact">Book
+                    Now</a></button>
               </div>
             </div>
           </div>
@@ -365,9 +526,6 @@
     </section>
 
     <!-- End Services Section -->
-
-
-
 
     <!-- ======= Our Clients Section ======= -->
     <!-- <section id="clients" class="clients">
@@ -440,55 +598,61 @@
 
   <main id="main">
 
-    
-    <section id="contact" class="contact">
-      
+
+    <section id="Conditions" class="contact">
+
       <div class="container">
-<!-- term and cond -->
-<h2>Terms & Conditions</h2>
-<ol>
-  <li><strong>Services Covered:</strong> We provide repair services for Motor, Pumps, Submersible Motor, Electric & Electronic products, and fans.</li>
+        <!-- term and cond -->
+        <h2>Terms & Conditions</h2>
+        <ol>
+          <li><strong>Services Covered:</strong> We provide repair services for Motor, Pumps, Submersible Motor,
+            Electric & Electronic products, and fans.</li>
 
-  <li><strong>Complaint Registration:</strong> Customers can register their complaints through our website or by contacting our helpline.</li>
+          <li><strong>Complaint Registration:</strong> Customers can register their complaints through our website or by
+            contacting our helpline.</li>
 
-  <li><strong>Job Site Visit Charges:</strong>
-    <ul>
-      <li>In-city service visit charge: ₹350</li>
-      <li>Out-city service visit charge: ₹500 (for distances beyond 15 km up to 50 km)</li>
-      <li>For locations beyond 50 km, an additional charge of ₹25 per kilometer applies.</li>
-    </ul>
-  </li>
+          <li><strong>Job Site Visit Charges:</strong>
+            <ul>
+              <li>In-city service visit charge: ₹350</li>
+              <li>Out-city service visit charge: ₹500 (for distances beyond 15 km up to 50 km)</li>
+              <li>For locations beyond 50 km, an additional charge of ₹25 per kilometer applies.</li>
+            </ul>
+          </li>
 
-  <li><strong>Service Booking:</strong>
-    <ul>
-      <li>Bite (site) visit charges apply only after booking the service.</li>
-      <li>A minimum of 3 hours per visit is charged for in-city services.</li>
-    </ul>
-  </li>
+          <li><strong>Service Booking:</strong>
+            <ul>
+              <li>Bite (site) visit charges apply only after booking the service.</li>
+              <li>A minimum of 3 hours per visit is charged for in-city services.</li>
+            </ul>
+          </li>
 
-  <li><strong>Complaint Handling:</strong>
-    <ul>
-      <li>Customers are requested to drop a complaint through our website or contact our helpline.</li>
-      <li>Our team will reach out to you for further details.</li>
-    </ul>
-  </li>
+          <li><strong>Complaint Handling:</strong>
+            <ul>
+              <li>Customers are requested to drop a complaint through our website or contact our helpline.</li>
+              <li>Our team will reach out to you for further details.</li>
+            </ul>
+          </li>
 
-  <li><strong>Service Locations:</strong> We provide services in the following areas:VAISHALI, GAYA, SARAN, AURANGABAD, Arwal, Rohtas, Jamui and surrounding regions.</li>
+          <li><strong>Service Locations:</strong> We provide services in the following areas:VAISHALI, GAYA, SARAN,
+            AURANGABAD, Arwal, Rohtas, Jamui and surrounding regions.</li>
 
-  <li><strong>Products Covered:</strong> We offer repair services for Motor, Submersible, Fan, Pumps, Panels, and other related products.</li>
+          <li><strong>Products Covered:</strong> We offer repair services for Motor, Submersible, Fan, Pumps, Panels,
+            and other related products.</li>
 
-  <li><strong>Remarks:</strong>
-    <ul>
-      <li>Customers are advised to be present at the location during the service visit.</li>
-      <li>Any spare parts required for repair are not included in the initial service charges.</li>
-    </ul>
-  </li>
+          <li><strong>Remarks:</strong>
+            <ul>
+              <li>Customers are advised to be present at the location during the service visit.</li>
+              <li>Any spare parts required for repair are not included in the initial service charges.</li>
+            </ul>
+          </li>
 
-  <li><strong>State Regulations:</strong> Please adhere to state regulations and guidelines during service visits.</li>
+          <li><strong>State Regulations:</strong> Please adhere to state regulations and guidelines during service
+            visits.</li>
 
-  <li><strong>Captcha:</strong> To ensure security and authenticity, a captcha may be required during online interactions.</li>
-</ol>
-<!-- term and cond -->
+          <li><strong>Captcha:</strong> To ensure security and authenticity, a captcha may be required during online
+            interactions.</li>
+        </ol>
+        <!-- term and cond -->
         <div class="row justify-content-center" data-aos="fade-up">
 
           <div class="col-lg-10">
@@ -520,150 +684,12 @@
         </div>
 
 
-        <!-- form -->
-        <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <h2 style="text-align: center; margin: 20px 0px;">Book Your Service</h2>
-          <div class="col-lg-10">
-            <form id="dealershipForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <label for="names">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="names" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <label for="emails">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="emails" required>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <label for="phone">Mobile</label>
-                  <input type="tel" class="form-control" name="phone" id="phone" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <label for="altphone">Alternative Mobile</label>
-                  <input type="tel" class="form-control" name="altphone" id="altphone">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="district">Select District</label>
-                <select class="form-control" name="district" id="district" required>
-                  <option value="VAISHALI">VAISHALI</option>
-                  <option value="GAYA">GAYA</option>
-                  <option value="SARAN">SARAN</option>
-                  <option value="AURANGABAD">AURANGABAD</option>
-                  <option value="Arwal">Arwal</option>
-                  <option value="Rohtas">Rohtas</option>
-                  <option value="Jamui">Jamui</option>
-                </select>
-              </div>
-              <div class="form-group mt-3">
-                <label for="products">Select Products</label>
-                <div class="form-check" style="display: flex; flex-wrap: wrap; gap: 26px;">
-                  <div>
-                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
-                      value="motor" id="motor">
-                    <label class="form-check-label" for="motor">Motor</label>
-                  </div>
-
-                  <div>
-                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
-                      value="submersible" id="submersible">
-                    <label class="form-check-label" for="submersible">Submersible</label>
-                  </div>
-
-                  <div>
-                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
-                      value="pumps" id="pumps">
-                    <label class="form-check-label" for="pumps">Pumps</label>
-                  </div>
-
-                  <div>
-                    <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
-                      value="fan" id="fan">
-                    <label class="form-check-label" for="fan">Fan</label>
-                  </div>
-
-                  <div>
-
-                  </div>
-                  <input class="form-check-input" type="checkbox" style="max-height: 16px;" name="products[]"
-                    value="other" id="other">
-                  <label class="form-check-label" for="other">Other</label>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="state">State</label>
-                <input type="text" class="form-control" name="state" id="state" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="messages">Message</label>
-                <textarea class="form-control" name="message" rows="5" id="messages" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center">
-                <button type="submit" onclick="sendDealershipInquiry(event)">Book Now</button>
-              </div>
-              <div class="loading" style="display: none;">Loading...</div>
-              <div class="error-message" style="color: red;"></div>
-              <div class="sent-message" style="color: green;"></div>
-            </form>
-
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script>
-              function sendDealershipInquiry(e) {
-                e.preventDefault();
-                var name = document.getElementById("names").value;
-                var email = document.getElementById("emails").value;
-                var phone = document.getElementById("phone").value;
-                var altphone = document.getElementById("altphone").value;
-                var district = document.getElementById("district").value;
-                var products = document.getElementsByName("products[]");
-                var selectedProducts = Array.from(products).filter(product => product.checked).map(product => product.value).join(", ");
-                var state = document.getElementById("state").value;
-                var message = document.getElementById("messages").value;
-
-                if (!name || !email || !phone || !district || !selectedProducts || !state || !message) {
-                  swal("Failed!", "All Fields Are Required", "error");
-                  return;
-                } else {
-                  var body = `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Alternative Phone: ${altphone} <br/> District: ${district} <br/> Products: ${selectedProducts} <br/> State: ${state} <br/> Message: ${message}`;
-
-                  Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "bablukmr2231@gmail.com",
-                    Password: "49B7BD3457A0A5CC2FA472534182C75BC32C",
-                    To: "bablukmr2231@gmail.com",
-                    From: "bablukmr2231@gmail.com",
-                    Subject: "Customer Inquiry",
-                    Body: body,
-                  }).then((message) => {
-                    if (message === "OK") {
-                      swal("Successful!", "Your dealership inquiry has been sent successfully.", "success");
-                      document.getElementById("dealershipForm").reset();
-                    } else {
-                      swal(
-                        "Failed!",
-                        "Your dealership inquiry was not received. Please try again later.",
-                        "error"
-                      );
-                    }
-                  });
-                }
-              }
-            </script>
-          </div>
-        </div>
-
+     
 
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main>
 
@@ -735,7 +761,8 @@
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://www.facebook.com/profile.php?id=100077640286332" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077640286332" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
