@@ -2104,7 +2104,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 #footer .footer-top h4 {
@@ -2143,7 +2143,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2156,7 +2156,7 @@ section {
 
 #footer .footer-newsletter {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
 }
 
 #footer .footer-newsletter h4 {
