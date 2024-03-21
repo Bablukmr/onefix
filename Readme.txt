@@ -3,7 +3,6 @@
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
-
         <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="carousel-container ">
