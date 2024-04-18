@@ -1,5 +1,4 @@
 content="Discover reliable appliance repair and technical education services with 1Fix. Our skilled technicians offer affordable and prompt solutions for home appliances, including refrigerators, air conditioners, washing machines, and more. Explore our training institute, Smart Techno Care, providing courses in AC, TV, mobile, motor winding, and refrigerator repair. Empower yourself with technical skills in a technology-driven world. Contact us 24x7 for quality service and education. Your satisfaction is our priority at 1Fix"
-
 <title>1Fix - We Fix it Right</title>
   <meta name="description"
     content="Discover reliable appliance repair and technical education services with 1Fix. Our skilled technicians offer affordable and prompt solutions for home appliances, including refrigerators, air conditioners, washing machines, and more. Explore our training institute, Smart Techno Care, providing courses in AC, TV, mobile, motor winding, and refrigerator repair. Empower yourself with technical skills in a technology-driven world. Contact us 24x7 for quality service and education. Your satisfaction is our priority at 1Fix">
